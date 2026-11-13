@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1757588855 source:c:\users\admin\documents\mit manipal\year ii\ds lab\lab 2\practice 1\balanced_parenthesis_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

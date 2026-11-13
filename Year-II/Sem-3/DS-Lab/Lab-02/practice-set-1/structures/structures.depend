@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1756632055 source:c:\users\admin\documents\mit manipal\year ii\ds lab\lab 2\practice 1\structures\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
