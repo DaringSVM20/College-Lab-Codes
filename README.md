@@ -20,7 +20,7 @@ understand what you hand in - your evaluation goes better that way, and your
 institution has its own rules about copied submissions.
 
 <!-- mine:start -->
-_Anything you write between these two markers is kept when the README is regenerated._
+For Doubts/ Changes, Contact: shlokverma20@gmail.com
 <!-- mine:end -->
 
 ## Labs
