@@ -1,0 +1,53 @@
+# dependencies
+node_modules/
+.venv/
+venv/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# java / jvm
+*.class
+target/
+.gradle/
+
+# c / c++ build output
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+a.out
+bin/Debug/
+bin/Release/
+obj/Debug/
+obj/Release/
+
+# verilog simulation output
+*.vvp
+*.out
+
+# build directories
+build/
+dist/
+
+# editor / os
+.idea/
+.vscode/*
+!.vscode/tasks.json
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# secrets - never commit
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.keystore
+.npmrc
+.netrc
