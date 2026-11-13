@@ -56,4 +56,4 @@ Uploaded a unit at a time: 1 of 18 so far.
 ---
 
 This is my own coursework, published for reference. If you are taking the same
-labs, read it use it however you wish.
+labs, read it use it however you wish ✌🏻
