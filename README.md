@@ -40,6 +40,12 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |       `-- DS-Lab/
 |           |-- Lab-01/
 |           |-- Lab-02/
+|           |-- Lab-03/
+|           |-- Lab-04/
+|           |-- Lab-05/
+|           |-- Lab-06/
+|           |-- practice-december-2025/
+|           |-- practice-endsem/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore

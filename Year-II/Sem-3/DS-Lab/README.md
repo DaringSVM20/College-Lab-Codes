@@ -18,10 +18,20 @@ Opens the Data Structures lab. Lab 1 is the introductory submission, kept as the
 
 Sixteen standalone practice programs written alongside Lab 2, each in its own Code::Blocks project folder. They cover singly, doubly and circular linked lists, stack-based balanced-parenthesis checking and duplicate-parenthesis removal, postfix handling, insertion and selection sort, polynomial addition, finding the maximum of two matrices, and struct-based record exercises. Two folders (lab_midsem, lab_midsem_2) are midsem revision attempts.
 
+### Labs 3-6 submissions and later practice
+
+The Lab 3 to Lab 6 submissions, which exist only as the written reports - the code for those weeks was written in the lab and submitted as a document rather than kept as source files. Also includes two later practice projects: a December 2025 revision program and a queue implementation written while preparing for the endsem.
+
 ## Folders
 
 - [`Lab-01/`](Lab-01) - 1 Word document, 1 PDF
 - [`Lab-02/`](Lab-02) - 22 C sources, 1 PDF
+- [`Lab-03/`](Lab-03) - 1 PDF, 1 Word document
+- [`Lab-04/`](Lab-04) - 1 PDF
+- [`Lab-05/`](Lab-05) - 1 PDF
+- [`Lab-06/`](Lab-06) - 1 PDF
+- [`practice-december-2025/`](practice-december-2025) - 1 C source
+- [`practice-endsem/`](practice-endsem) - 1 C source
 
 ## Requirements
 
