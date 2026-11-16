@@ -22,6 +22,10 @@ Sixteen standalone practice programs written alongside Lab 2, each in its own Co
 
 The Lab 3 to Lab 6 submissions, which exist only as the written reports - the code for those weeks was written in the lab and submitted as a document rather than kept as source files. Also includes two later practice projects: a December 2025 revision program and a queue implementation written while preparing for the endsem.
 
+### Lab 7 and Lab 10 - stack applications and binary search trees
+
+Lab 7 implements a character stack with push/pop/peek/isEmpty/isFull and uses it three ways: checking whether a word is a palindrome, validating bracket matching in an expression, and converting infix to postfix then evaluating the result with operator precedence. Lab 10 builds a binary search tree with recursive insert and prints inorder, preorder and postorder traversals; the numbered main variants are successive attempts at the same exercise.
+
 ## Folders
 
 - [`Lab-01/`](Lab-01) - 1 Word document, 1 PDF
@@ -30,6 +34,8 @@ The Lab 3 to Lab 6 submissions, which exist only as the written reports - the co
 - [`Lab-04/`](Lab-04) - 1 PDF
 - [`Lab-05/`](Lab-05) - 1 PDF
 - [`Lab-06/`](Lab-06) - 1 PDF
+- [`Lab-07/`](Lab-07) - 3 C sources, 1 Archive
+- [`Lab-10/`](Lab-10) - 5 C sources, and a few others
 - [`practice-december-2025/`](practice-december-2025) - 1 C source
 - [`practice-endsem/`](practice-endsem) - 1 C source
 

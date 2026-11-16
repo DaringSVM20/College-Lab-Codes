@@ -44,6 +44,8 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-04/
 |           |-- Lab-05/
 |           |-- Lab-06/
+|           |-- Lab-07/
+|           |-- Lab-10/
 |           |-- practice-december-2025/
 |           |-- practice-endsem/
 |           |-- Lab-Manual.pdf
