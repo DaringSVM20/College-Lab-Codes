@@ -28,6 +28,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 | Semester | Lab | Topics |
 | --- | --- | --- |
 | Sem 3 | [Data Structures Lab](Year-II/Sem-3/DS-Lab) | Pointers, dynamic memory, linked lists, stacks, queues, sorting, binary search trees |
+| Sem 3 | [Digital Systems and Computer Organisation Lab](Year-II/Sem-3/DSCO-Lab) | Verilog HDL, combinational logic, multiplexers, decoders, encoders, flip-flops, counters |
 
 ## Repository layout
 
@@ -37,6 +38,11 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 .
 |-- Year-II/
 |   `-- Sem-3/
+|       |-- DSCO-Lab/
+|       |   |-- Week-00/
+|       |   |-- Week-01/
+|       |   |-- Lab-Manual.pdf
+|       |   `-- README.md
 |       `-- DS-Lab/
 |           |-- Lab-01/
 |           |-- Lab-02/
