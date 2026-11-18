@@ -39,8 +39,10 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |-- Year-II/
 |   `-- Sem-3/
 |       |-- DSCO-Lab/
+|       |   |-- Lab-05-multiplexers/
 |       |   |-- Week-00/
 |       |   |-- Week-01/
+|       |   |-- Week-02/
 |       |   |-- Lab-Manual.pdf
 |       |   `-- README.md
 |       `-- DS-Lab/
