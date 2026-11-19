@@ -1,0 +1,78 @@
+$date
+	Sun Nov 02 18:47:48 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module dec3to8tb $end
+$var wire 8 ! y [7:0] $end
+$var reg 1 " en $end
+$var reg 3 # w [2:0] $end
+$scope module dut $end
+$var wire 1 " en $end
+$var wire 3 $ w [2:0] $end
+$var wire 8 % y [7:0] $end
+$var wire 2 & e [1:0] $end
+$scope module d0 $end
+$var wire 1 ' en $end
+$var wire 2 ( w [1:0] $end
+$var reg 4 ) y [3:0] $end
+$upscope $end
+$scope module d1 $end
+$var wire 1 * en $end
+$var wire 2 + w [1:0] $end
+$var reg 4 , y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+0*
+b1 )
+b0 (
+1'
+b1 &
+b1 %
+b0 $
+b0 #
+1"
+b1 !
+$end
+#10
+b1000 !
+b1000 %
+b1000 )
+b11 (
+b11 +
+b11 #
+b11 $
+#20
+0'
+b1 ,
+1*
+b10 &
+b10000 !
+b10000 %
+b0 )
+b0 (
+b0 +
+b100 #
+b100 $
+#30
+b10000000 !
+b10000000 %
+b1000 ,
+b11 (
+b11 +
+b111 #
+b111 $
+#40

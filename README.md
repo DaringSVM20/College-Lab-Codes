@@ -40,6 +40,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |   `-- Sem-3/
 |       |-- DSCO-Lab/
 |       |   |-- Lab-05-multiplexers/
+|       |   |-- Practice/
 |       |   |-- Week-00/
 |       |   |-- Week-01/
 |       |   |-- Week-02/

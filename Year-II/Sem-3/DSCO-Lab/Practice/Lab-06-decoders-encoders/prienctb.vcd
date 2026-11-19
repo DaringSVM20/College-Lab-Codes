@@ -1,0 +1,52 @@
+$date
+	Sun Nov 02 22:09:03 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module prienctb $end
+$var wire 2 ! out [1:0] $end
+$var reg 4 " in [3:0] $end
+$scope module dut $end
+$var wire 4 # in [3:0] $end
+$var reg 2 $ out [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx $
+b0 #
+b0 "
+bx !
+$end
+#10
+b0 !
+b0 $
+b1 "
+b1 #
+#20
+b1 !
+b1 $
+b10 "
+b10 #
+#30
+b10 !
+b10 $
+b100 "
+b100 #
+#40
+b11 !
+b11 $
+b1000 "
+b1000 #
+#50
+b1010 "
+b1010 #
+#60
