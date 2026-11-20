@@ -29,6 +29,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 | --- | --- | --- |
 | Sem 3 | [Data Structures Lab](Year-II/Sem-3/DS-Lab) | Pointers, dynamic memory, linked lists, stacks, queues, sorting, binary search trees |
 | Sem 3 | [Digital Systems and Computer Organisation Lab](Year-II/Sem-3/DSCO-Lab) | Verilog HDL, combinational logic, multiplexers, decoders, encoders, flip-flops, counters |
+| Sem 4 | [Database Systems Lab](Year-II/Sem-4/DBSL) | DDL, DML, joins, aggregate and nested queries, PL/SQL cursors, ER modelling, full-stack mini project |
 
 ## Repository layout
 
@@ -37,26 +38,33 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 ```text
 .
 |-- Year-II/
-|   `-- Sem-3/
-|       |-- DSCO-Lab/
-|       |   |-- Lab-05-multiplexers/
-|       |   |-- Practice/
-|       |   |-- Week-00/
-|       |   |-- Week-01/
-|       |   |-- Week-02/
-|       |   |-- Lab-Manual.pdf
-|       |   `-- README.md
-|       `-- DS-Lab/
+|   |-- Sem-3/
+|   |   |-- DSCO-Lab/
+|   |   |   |-- Lab-05-multiplexers/
+|   |   |   |-- Practice/
+|   |   |   |-- Week-00/
+|   |   |   |-- Week-01/
+|   |   |   |-- Week-02/
+|   |   |   |-- Lab-Manual.pdf
+|   |   |   `-- README.md
+|   |   `-- DS-Lab/
+|   |       |-- Lab-01/
+|   |       |-- Lab-02/
+|   |       |-- Lab-03/
+|   |       |-- Lab-04/
+|   |       |-- Lab-05/
+|   |       |-- Lab-06/
+|   |       |-- Lab-07/
+|   |       |-- Lab-10/
+|   |       |-- practice-december-2025/
+|   |       |-- practice-endsem/
+|   |       |-- Lab-Manual.pdf
+|   |       `-- README.md
+|   `-- Sem-4/
+|       `-- DBSL/
 |           |-- Lab-01/
 |           |-- Lab-02/
-|           |-- Lab-03/
-|           |-- Lab-04/
-|           |-- Lab-05/
-|           |-- Lab-06/
-|           |-- Lab-07/
-|           |-- Lab-10/
-|           |-- practice-december-2025/
-|           |-- practice-endsem/
+|           |-- sample-schema/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore
