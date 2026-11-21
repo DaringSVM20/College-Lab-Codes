@@ -14,10 +14,15 @@ Topics: DDL, DML, joins, aggregate and nested queries, PL/SQL cursors, ER modell
 
 The first two SQL scripts. Lab 1 creates and populates an Employee table and alters it to add a salary column. Lab 2 is substantially larger: a Department and Employee schema with a foreign key between them, bulk inserts, then queries exercising joins, aggregates and grouping. Also includes smallRelationsUniv.sql, the standard sample university schema used as a scratch database for later exercises.
 
+### Lab 3 and Lab 4 - nested queries and updates
+
+Lab 3 and Lab 4 continue into nested and correlated subqueries and conditional UPDATE statements over a student schema. Also includes the endsem question set, which asks for maximum-enrolment queries, credit-filtered joins and a PL/SQL cursor procedure that adjusts CGPA in bands.
+
 ## Folders
 
 - [`Lab-01/`](Lab-01) - 1 SQL script, 1 PDF
 - [`Lab-02/`](Lab-02) - 1 SQL script, 1 PDF
+- [`Lab-03/`](Lab-03) - 1 SQL script
 - [`sample-schema/`](sample-schema) - 1 SQL script
 
 ## Requirements

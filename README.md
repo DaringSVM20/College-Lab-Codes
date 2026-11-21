@@ -64,6 +64,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |       `-- DBSL/
 |           |-- Lab-01/
 |           |-- Lab-02/
+|           |-- Lab-03/
 |           |-- sample-schema/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
