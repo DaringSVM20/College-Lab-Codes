@@ -1,0 +1,75 @@
+
+
+Back
+DBSL
+Semester 4•Endsem
+
+Section tags are automatically assigned and may vary from the original exam.
+1
+2026 • Mnc
+You are required to create three tables: Students, Enrollments, and Courses
+(Exacts columns are not known).
+
+1. Write an SQL query to find the student(s) enrolled in the maximum number of courses.
+Display the student name along with the number of courses.
+
+2. Write an SQL query to retrieve student names and course titles where students are enrolled
+in courses having credits greater than 3.
+
+3. Write a PL/SQL procedure using a cursor to update the CGPA of students as follows:
+- If CGPA < 6 → increase by 0.5
+- If CGPA is between 6 and 8 → increase by 0.2
+- If CGPA > 8 → no change
+
+Then, call the procedure using a valid PL/SQL block.
+
+4. Create a trigger on the Students table to handle the following conditions during insertion:
+(a) Prevent insertion if the student ID already exists.
+(b) If CGPA is NULL, set it to 5.
+(c) If CGPA > 9, set it to 9.
+
+Show less
+Copy question
+2
+2026 • CCE-C
+Database Schema:
+
+PATIENT(patient_id, patient_name, phone_number, doctor_id, insurance_id, other_details)
+
+DOCTOR(doctor_id, doctor_name, specialization, position, other_details)
+
+APPOINTMENT(appointment_id, patient_id, doctor_id, room_number, appointment_date, other_details)
+
+Question 1:
+Write an SQL query to display the patient name and doctor ID for those patients who are treated by doctors holding the position of 'Head Doctor'.
+
+Question 2:
+Write an SQL query to display the doctor ID, patient name, and appointment count for those cases where a doctor has conducted appointments in the same room more than once.
+
+Question 3:
+Write a stored procedure to count the number of insured and uninsured patients for each doctor. The procedure should accept a doctor ID as input and return the doctor name, number of insured patients, and number of uninsured patients. Also, demonstrate how the procedure can be executed for all doctors in the DOCTOR table.
+
+Question 4:
+Write a trigger on the APPOINTMENT table that is activated after inserting a new appointment. The trigger should display the details of the newly inserted appointment and the total number of appointments for the corresponding doctor after the insertion.
+
+Show less
+Copy question
+3
+2026 • CCE-B
+Library Management System
+
+Tables:
+Books (bid (PK), bname, price, stock)
+Members (mid (PK), mname, contact)
+Borrow (borrow_id (PK), bid (FK), mid (FK), quantity, borrow_date)
+
+1. Print mid, mname, and total_purchase of all members who have done a total purchase greater than 3000.
+
+2. Print mid, mname, and total_qty of members who have borrowed the most number of books in the year 2025.
+
+3. Create a procedure to fetch book stock and print bid, bname, and stock for each book. If no books are present, print 'No books found'.
+
+4. If during insertion in the Borrow table the borrow_date is NULL, replace it with SYSDATE.
+
+Show less
+Copy question

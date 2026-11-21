@@ -20,6 +20,7 @@ Lab 3 and Lab 4 continue into nested and correlated subqueries and conditional U
 
 ## Folders
 
+- [`endsem/`](endsem) - 1 Text
 - [`Lab-01/`](Lab-01) - 1 SQL script, 1 PDF
 - [`Lab-02/`](Lab-02) - 1 SQL script, 1 PDF
 - [`Lab-03/`](Lab-03) - 1 SQL script
