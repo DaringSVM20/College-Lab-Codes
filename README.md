@@ -68,6 +68,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-03/
 |           |-- Lab-04/
 |           |-- sample-schema/
+|           |-- Week-02/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore

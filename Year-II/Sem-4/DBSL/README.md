@@ -26,6 +26,7 @@ Lab 3 and Lab 4 continue into nested and correlated subqueries and conditional U
 - [`Lab-03/`](Lab-03) - 1 SQL script
 - [`Lab-04/`](Lab-04) - 1 SQL script
 - [`sample-schema/`](sample-schema) - 1 SQL script
+- [`Week-02/`](Week-02) - 1 SQL script
 
 ## Requirements
 
