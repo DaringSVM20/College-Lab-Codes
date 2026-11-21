@@ -65,6 +65,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-01/
 |           |-- Lab-02/
 |           |-- Lab-03/
+|           |-- Lab-04/
 |           |-- sample-schema/
 |           |-- Lab-Manual.pdf
 |           `-- README.md

@@ -23,6 +23,7 @@ Lab 3 and Lab 4 continue into nested and correlated subqueries and conditional U
 - [`Lab-01/`](Lab-01) - 1 SQL script, 1 PDF
 - [`Lab-02/`](Lab-02) - 1 SQL script, 1 PDF
 - [`Lab-03/`](Lab-03) - 1 SQL script
+- [`Lab-04/`](Lab-04) - 1 SQL script
 - [`sample-schema/`](sample-schema) - 1 SQL script
 
 ## Requirements
