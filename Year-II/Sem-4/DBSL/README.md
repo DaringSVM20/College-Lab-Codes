@@ -18,6 +18,10 @@ The first two SQL scripts. Lab 1 creates and populates an Employee table and alt
 
 Lab 3 and Lab 4 continue into nested and correlated subqueries and conditional UPDATE statements over a student schema. Also includes the endsem question set, which asks for maximum-enrolment queries, credit-filtered joins and a PL/SQL cursor procedure that adjusts CGPA in bands.
 
+### Mini project - Course Management System
+
+The DBSL mini project: a Course Management System. cms_schema.sql defines the relational schema; the backend is a small Express service (db.js for the connection pool, index.js for the routes); the front end is React with Vite and Tailwind, with separate login, student dashboard and instructor dashboard pages talking to the API through src/api.js. The folder also carries the ER diagram, the written report and the presentation assets.
+
 ## Folders
 
 - [`endsem/`](endsem) - 1 Text
@@ -25,6 +29,7 @@ Lab 3 and Lab 4 continue into nested and correlated subqueries and conditional U
 - [`Lab-02/`](Lab-02) - 1 SQL script, 1 PDF
 - [`Lab-03/`](Lab-03) - 1 SQL script
 - [`Lab-04/`](Lab-04) - 1 SQL script
+- [`mini-project/`](mini-project) - 9 Screenshots, 6 JavaScripts, 6 React components, and a few others
 - [`sample-schema/`](sample-schema) - 1 SQL script
 - [`Week-02/`](Week-02) - 1 SQL script
 

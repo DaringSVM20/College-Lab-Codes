@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+/* Student theme — MIT Manipal orange */
+.theme-student {
+  --accent:        #E87722;
+  --accent-hover:  #CF6510;
+  --accent-light:  rgba(232,119,34,0.15);
+  --accent-ring:   rgba(232,119,34,0.4);
+  --sidebar-bg:    #1a1a2e;
+  --sidebar-border:#2a2a3e;
+  --active-bg:     #E87722;
+}
+
+/* Instructor theme — forest green */
+.theme-instructor {
+  --accent:        #1A6B3C;
+  --accent-hover:  #145730;
+  --accent-light:  rgba(26,107,60,0.15);
+  --accent-ring:   rgba(26,107,60,0.4);
+  --sidebar-bg:    #0f1f17;
+  --sidebar-border:#1a3328;
+  --active-bg:     #1A6B3C;
+}

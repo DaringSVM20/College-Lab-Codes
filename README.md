@@ -67,6 +67,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-02/
 |           |-- Lab-03/
 |           |-- Lab-04/
+|           |-- mini-project/
 |           |-- sample-schema/
 |           |-- Week-02/
 |           |-- Lab-Manual.pdf
