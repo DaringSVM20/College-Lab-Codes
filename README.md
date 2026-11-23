@@ -30,6 +30,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 | Sem 3 | [Data Structures Lab](Year-II/Sem-3/DS-Lab) | Pointers, dynamic memory, linked lists, stacks, queues, sorting, binary search trees |
 | Sem 3 | [Digital Systems and Computer Organisation Lab](Year-II/Sem-3/DSCO-Lab) | Verilog HDL, combinational logic, multiplexers, decoders, encoders, flip-flops, counters |
 | Sem 4 | [Database Systems Lab](Year-II/Sem-4/DBSL) | DDL, DML, joins, aggregate and nested queries, PL/SQL cursors, ER modelling, full-stack mini project |
+| Sem 4 | [Object-Oriented Software Design Lab](Year-II/Sem-4/OOSDL) | Classes and inheritance, enums, multithreading, synchronization, I/O streams, serialization, generics, collections, JavaFX and Swing GUIs |
 
 ## Repository layout
 
@@ -61,15 +62,22 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |   |       |-- Lab-Manual.pdf
 |   |       `-- README.md
 |   `-- Sem-4/
-|       `-- DBSL/
-|           |-- endsem/
+|       |-- DBSL/
+|       |   |-- endsem/
+|       |   |-- Lab-01/
+|       |   |-- Lab-02/
+|       |   |-- Lab-03/
+|       |   |-- Lab-04/
+|       |   |-- mini-project/
+|       |   |-- sample-schema/
+|       |   |-- Week-02/
+|       |   |-- Lab-Manual.pdf
+|       |   `-- README.md
+|       `-- OOSDL/
 |           |-- Lab-01/
 |           |-- Lab-02/
-|           |-- Lab-03/
-|           |-- Lab-04/
-|           |-- mini-project/
-|           |-- sample-schema/
-|           |-- Week-02/
+|           |-- lab-system-handout/
+|           |-- slides/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore
