@@ -78,6 +78,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-02/
 |           |-- Lab-03/
 |           |-- Lab-04/
+|           |-- Lab-05/
 |           |-- lab-system-handout/
 |           |-- slides/
 |           |-- Lab-Manual.pdf

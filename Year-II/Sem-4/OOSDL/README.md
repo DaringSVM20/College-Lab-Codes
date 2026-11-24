@@ -24,8 +24,9 @@ Lab 3 introduces threads: HotelServiceManagement and OrderProcessingSystem each 
 - [`Lab-02/`](Lab-02) - 2 Java sources
 - [`Lab-03/`](Lab-03) - 2 Java sources
 - [`Lab-04/`](Lab-04) - 2 Java sources
+- [`Lab-05/`](Lab-05) - 2 Files, 1 Java source
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
-- [`slides/`](slides) - 2 Slidess
+- [`slides/`](slides) - 4 Slidess, and a few others
 
 ## Requirements
 
