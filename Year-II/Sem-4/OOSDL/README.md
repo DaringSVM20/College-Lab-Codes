@@ -30,6 +30,7 @@ Lab 6 covers persistence: serializing Room objects to disk, a RandomAccessFile d
 - [`Lab-04/`](Lab-04) - 2 Java sources
 - [`Lab-05/`](Lab-05) - 2 Files, 1 Java source
 - [`Lab-06/`](Lab-06) - 6 Java sources, 5 Texts, 2 Data files
+- [`Lab-07/`](Lab-07) - 15 Java sources, 1 File
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
 - [`slides/`](slides) - 4 Slidess, and a few others
 
