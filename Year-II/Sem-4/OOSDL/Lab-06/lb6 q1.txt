@@ -1,0 +1,97 @@
+package Lab6; 
+import java.io.*;
+import java.util.Scanner;
+
+public class HotelRAF {
+
+    static final String FILE = "rooms.dat";
+    static final int NAME_LEN = 20;
+    static final int RECORD_SIZE = 4 + (2 * NAME_LEN) + 8 + 1;
+
+    // Add Room
+    static void add(int no, String type, double price, boolean status) throws Exception {
+        RandomAccessFile f = new RandomAccessFile(FILE, "rw");
+        f.seek((no - 1) * RECORD_SIZE);
+
+        f.writeInt(no);
+
+        StringBuilder sb = new StringBuilder(type);
+        sb.setLength(NAME_LEN);
+        f.writeChars(sb.toString());
+
+        f.writeDouble(price);
+        f.writeBoolean(status);
+
+        f.close();
+        System.out.println("Room Added");
+    }
+
+    // View Room
+    static void view(int no) throws Exception {
+        RandomAccessFile f = new RandomAccessFile(FILE, "r");
+        f.seek((no - 1) * RECORD_SIZE);
+
+        int rno = f.readInt();
+        char[] type = new char[NAME_LEN];
+        for (int i = 0; i < NAME_LEN; i++)
+            type[i] = f.readChar();
+
+        double price = f.readDouble();
+        boolean status = f.readBoolean();
+
+        System.out.println("Room No: " + rno);
+        System.out.println("Type: " + new String(type).trim());
+        System.out.println("Price: " + price);
+        System.out.println("Status: " + (status ? "Booked" : "Available"));
+
+        f.close();
+    }
+
+    // Update Status
+    static void update(int no, boolean status) throws Exception {
+        RandomAccessFile f = new RandomAccessFile(FILE, "rw");
+
+        long pos = (no - 1) * RECORD_SIZE + 4 + (2 * NAME_LEN) + 8;
+        f.seek(pos);
+
+        f.writeBoolean(status);
+        f.close();
+
+        System.out.println("Status Updated");
+    }
+
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("1.Add  2.View  3.Update");
+        int ch = sc.nextInt();
+
+        if (ch == 1) {
+            System.out.print("Room No: ");
+            int no = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Type: ");
+            String type = sc.nextLine();
+            System.out.print("Price: ");
+            double price = sc.nextDouble();
+            System.out.print("Booked (true/false): ");
+            boolean status = sc.nextBoolean();
+            add(no, type, price, status);
+        }
+
+        else if (ch == 2) {
+            System.out.print("Room No: ");
+            view(sc.nextInt());
+        }
+
+        else if (ch == 3) {
+            System.out.print("Room No: ");
+            int no = sc.nextInt();
+            System.out.print("New Status (true/false): ");
+            boolean status = sc.nextBoolean();
+            update(no, status);
+        }
+
+        sc.close();
+    }
+}

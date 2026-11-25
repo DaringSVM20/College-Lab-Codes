@@ -1,0 +1,110 @@
+package Lab6;
+import java.io.*;
+import java.util.*;
+
+// Room class
+class Room implements Serializable {
+    int roomNumber;
+    String roomType;
+    double price;
+    boolean booked;
+    String guestName;
+
+    Room(int roomNumber, String roomType, double price, boolean booked, String guestName) {
+        this.roomNumber = roomNumber;
+        this.roomType = roomType;
+        this.price = price;
+        this.booked = booked;
+        this.guestName = guestName;
+    }
+
+    public String toString() {
+        return "Room No: " + roomNumber +
+               ", Type: " + roomType +
+               ", Price: " + price +
+               ", Booked: " + booked +
+               ", Guest: " + guestName;
+    }
+}
+
+public class HotelSerialization {
+
+    static final String FILE = "rooms.ser";
+
+    // Save rooms to file (Serialization)
+    static void saveRooms(ArrayList<Room> rooms) {
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(FILE))) {
+            out.writeObject(rooms);
+        } catch (IOException e) {
+            System.out.println("Error saving data.");
+        }
+    }
+
+    // Load rooms from file (Deserialization)
+    static ArrayList<Room> loadRooms() {
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(FILE))) {
+            return (ArrayList<Room>) in.readObject();
+        } catch (Exception e) {
+            return new ArrayList<>(); // return empty if file not found
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Room> rooms = loadRooms();
+
+        System.out.println("1.Add  2.Display  3.Search  4.Update");
+        int ch = sc.nextInt();
+
+        switch (ch) {
+
+            case 1: // Add room
+                System.out.print("Room No: ");
+                int no = sc.nextInt();
+                sc.nextLine();
+                System.out.print("Type: ");
+                String type = sc.nextLine();
+                System.out.print("Price: ");
+                double price = sc.nextDouble();
+                sc.nextLine();
+                System.out.print("Guest Name: ");
+                String guest = sc.nextLine();
+
+                rooms.add(new Room(no, type, price, true, guest));
+                saveRooms(rooms);
+                System.out.println("Room Saved!");
+                break;
+
+            case 2: // Display all
+                for (Room r : rooms)
+                    System.out.println(r);
+                break;
+
+            case 3: // Search
+                System.out.print("Enter Room No: ");
+                int searchNo = sc.nextInt();
+                for (Room r : rooms)
+                    if (r.roomNumber == searchNo)
+                        System.out.println(r);
+                break;
+
+            case 4: // Update booking status
+                System.out.print("Room No: ");
+                int updateNo = sc.nextInt();
+                for (Room r : rooms) {
+                    if (r.roomNumber == updateNo) {
+                        r.booked = !r.booked;
+                        if (!r.booked) r.guestName = "";
+                        System.out.println("Status Updated!");
+                    }
+                }
+                saveRooms(rooms); // re-serialize updated list
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+        }
+
+        sc.close();
+    }
+}

@@ -18,6 +18,10 @@ The start of the hotel-management example that runs through the whole lab. Lab 1
 
 Lab 3 introduces threads: HotelServiceManagement and OrderProcessingSystem each run work on their own thread classes. Lab 4 adds synchronization - a BankAccount guarded by synchronized methods against concurrent Customer threads, and booking/release tasks contending over the same Hotel object. Lab 5 moves to I/O with a byte-stream file copy.
 
+### Lab 6 and Lab 7 - serialization and generics
+
+Lab 6 covers persistence: serializing Room objects to disk, a RandomAccessFile demo, a MiniHotel driver, a BookManager and an exercise writing palindromes out to a file. Lab 7 is the generics week - a generic Pair, bounded type parameters, generic methods and generic arrays, applied back to rooms and charges, with eleven further worked examples in examples/.
+
 ## Folders
 
 - [`Lab-01/`](Lab-01) - 8 Java sources, and a few others
@@ -25,6 +29,7 @@ Lab 3 introduces threads: HotelServiceManagement and OrderProcessingSystem each 
 - [`Lab-03/`](Lab-03) - 2 Java sources
 - [`Lab-04/`](Lab-04) - 2 Java sources
 - [`Lab-05/`](Lab-05) - 2 Files, 1 Java source
+- [`Lab-06/`](Lab-06) - 6 Java sources, 5 Texts, 2 Data files
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
 - [`slides/`](slides) - 4 Slidess, and a few others
 
