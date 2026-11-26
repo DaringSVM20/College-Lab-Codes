@@ -28,6 +28,7 @@ Lab 8 reworks the hotel management system around Room and Customer collections. 
 
 ## Folders
 
+- [`endsem/`](endsem) - 1 Java source
 - [`Lab-01/`](Lab-01) - 8 Java sources, and a few others
 - [`Lab-02/`](Lab-02) - 2 Java sources
 - [`Lab-03/`](Lab-03) - 2 Java sources
