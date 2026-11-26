@@ -36,6 +36,7 @@ Lab 8 reworks the hotel management system around Room and Customer collections. 
 - [`Lab-06/`](Lab-06) - 6 Java sources, 5 Texts, 2 Data files
 - [`Lab-07/`](Lab-07) - 15 Java sources, 1 File
 - [`Lab-08/`](Lab-08) - 4 Java sources, 1 Text
+- [`Lab-09/`](Lab-09) - 3 Java sources, 1 Notes
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
 - [`slides/`](slides) - 4 Slidess, and a few others
 
