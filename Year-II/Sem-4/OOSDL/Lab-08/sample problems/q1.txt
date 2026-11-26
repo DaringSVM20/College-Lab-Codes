@@ -1,0 +1,207 @@
+import java.util.*;
+
+// 1. Room Model
+class Room {
+    int roomNo;
+    String type;
+    double price;
+    boolean isAvailable;
+
+    public Room(int roomNo, String type, double price) {
+        this.roomNo = roomNo;
+        this.type = type;
+        this.price = price;
+        this.isAvailable = true; // All rooms start available
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Room %03d | %-7s | ₹%.2f | %s",
+                roomNo, type, price, isAvailable ? "Available" : "Booked");
+    }
+}
+
+// 2. Customer Model
+class Customer {
+    int custId;
+    String name;
+    String contact;
+    int assignedRoomNo;
+
+    public Customer(int custId, String name, String contact, int assignedRoomNo) {
+        this.custId = custId;
+        this.name = name;
+        this.contact = contact;
+        this.assignedRoomNo = assignedRoomNo;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("ID:%03d | %-10s | %s | Room %03d",
+                custId, name, contact, assignedRoomNo);
+    }
+}
+
+// 3. Hotel Management System (Controller)
+public class HotelManagementSystem {
+    // Collections as specified in the lab
+    private static List<Room> rooms = new ArrayList<>();
+    private static List<Customer> customers = new ArrayList<>();
+    private static Map<Integer, Customer> roomBookings = new HashMap<>();
+    private static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int choice;
+        do {
+            printMenu();
+            choice = getValidInt("Enter choice: ", 1, 6);
+
+            switch (choice) {
+                case 1 -> addRoom();
+                case 2 -> displayAvailableRooms();
+                case 3 -> addCustomer();
+                case 4 -> bookRoom();
+                case 5 -> checkoutCustomer();
+                case 6 -> displayAllCustomers();
+            }
+            System.out.println("\n" + "=".repeat(40) + "\n");
+        } while (choice != 0); // 0 exits if you prefer, or change loop condition
+    }
+
+    // ---------------- MENU & INPUT HELPERS ----------------
+    private static void printMenu() {
+        System.out.println("🏨 HOTEL MANAGEMENT SYSTEM");
+        System.out.println("1. Add Room");
+        System.out.println("2. Display Available Rooms");
+        System.out.println("3. Add Customer");
+        System.out.println("4. Book Room");
+        System.out.println("5. Checkout Customer");
+        System.out.println("6. Display All Customers");
+        System.out.println("0. Exit");
+    }
+
+    private static int getValidInt(String prompt, int min, int max) {
+        while (true) {
+            System.out.print(prompt);
+            if (sc.hasNextInt()) {
+                int val = sc.nextInt();
+                sc.nextLine(); // consume newline
+                if (val >= min && val <= max) return val;
+                System.out.println("❌ Invalid range. Try again.");
+            } else {
+                System.out.println("❌ Numbers only. Try again.");
+                sc.next(); // clear invalid input
+            }
+        }
+    }
+
+    // ---------------- BUSINESS LOGIC ----------------
+    private static void addRoom() {
+        System.out.print("Enter Room Number: ");
+        int rNo = sc.nextInt(); sc.nextLine();
+        if (roomBookings.containsKey(rNo)) {
+            System.out.println("❌ Room already exists!");
+            return;
+        }
+        System.out.print("Enter Type (Single/Double/Deluxe/Suite): ");
+        String type = sc.nextLine();
+        System.out.print("Enter Price per Day: ");
+        double price = sc.nextDouble(); sc.nextLine();
+
+        rooms.add(new Room(rNo, type, price));
+        System.out.println("✅ Room added successfully.");
+    }
+
+    private static void displayAvailableRooms() {
+        // Filter available rooms
+        List<Room> available = new ArrayList<>();
+        for (Room r : rooms) {
+            if (r.isAvailable) available.add(r);
+        }
+
+        if (available.isEmpty()) {
+            System.out.println("❌ No rooms available.");
+            return;
+        }
+
+        // Apply Collections.sort() as required
+        Collections.sort(available, Comparator.comparingDouble(r -> r.price));
+        
+        System.out.println("\n📊 Available Rooms (Sorted by Price):");
+        available.forEach(System.out::println);
+    }
+
+    private static void addCustomer() {
+        System.out.print("Enter Customer ID: ");
+        int id = sc.nextInt(); sc.nextLine();
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+        System.out.print("Enter Contact: ");
+        String contact = sc.nextLine();
+
+        // Temporary placeholder room until booking
+        customers.add(new Customer(id, name, contact, 0));
+        System.out.println("✅ Customer record created.");
+    }
+
+    private static void bookRoom() {
+        System.out.print("Enter Customer ID: ");
+        int custId = sc.nextInt(); sc.nextLine();
+
+        // Find customer
+        Optional<Customer> custOpt = customers.stream().filter(c -> c.custId == custId).findFirst();
+        if (custOpt.isEmpty()) { System.out.println("❌ Customer not found."); return; }
+        Customer cust = custOpt.get();
+
+        System.out.print("Enter Room Number to Book: ");
+        int rNo = sc.nextInt(); sc.nextLine();
+
+        // Check room existence & availability
+        Room targetRoom = rooms.stream().filter(r -> r.roomNo == rNo).findFirst().orElse(null);
+        if (targetRoom == null) { System.out.println("❌ Room does not exist."); return; }
+        if (!targetRoom.isAvailable) { System.out.println("❌ Room already booked!"); return; }
+
+        // Execute booking
+        targetRoom.isAvailable = false;
+        cust.assignedRoomNo = rNo;
+        roomBookings.put(rNo, cust); // HashMap mapping
+        System.out.println("✅ Room " + rNo + " booked for " + cust.name);
+    }
+
+    private static void checkoutCustomer() {
+        System.out.print("Enter Room Number to Checkout: ");
+        int rNo = sc.nextInt(); sc.nextLine();
+
+        if (!roomBookings.containsKey(rNo)) {
+            System.out.println("❌ Room is not currently booked.");
+            return;
+        }
+
+        // Update state
+        Room targetRoom = rooms.stream().filter(r -> r.roomNo == rNo).findFirst().orElse(null);
+        if (targetRoom != null) targetRoom.isAvailable = true;
+        roomBookings.remove(rNo);
+        System.out.println("✅ Room " + rNo + " checked out successfully.");
+    }
+
+    private static void displayAllCustomers() {
+        if (customers.isEmpty()) {
+            System.out.println("❌ No customers registered.");
+            return;
+        }
+
+        System.out.println("\n👥 All Customers (Using Iterator):");
+        // Explicit Iterator usage as required by lab
+        Iterator<Customer> it = customers.iterator();
+        while (it.hasNext()) {
+            Customer c = it.next();
+            // Example: Remove customers with invalid room assignment (optional demo)
+            if (c.custId < 0) {
+                it.remove();
+                System.out.println("⚠️ Removed invalid record for ID: " + c.custId);
+            } else {
+                System.out.println(c);
+            }
+        }
+    }
+}

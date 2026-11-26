@@ -22,6 +22,10 @@ Lab 3 introduces threads: HotelServiceManagement and OrderProcessingSystem each 
 
 Lab 6 covers persistence: serializing Room objects to disk, a RandomAccessFile demo, a MiniHotel driver, a BookManager and an exercise writing palindromes out to a file. Lab 7 is the generics week - a generic Pair, bounded type parameters, generic methods and generic arrays, applied back to rooms and charges, with eleven further worked examples in examples/.
 
+### Lab 8, Lab 9 and practice sets
+
+Lab 8 reworks the hotel management system around Room and Customer collections. Lab 9 puts a GUI on it - a button demo, a hotel GUI and a room-price window. Also includes the endsem attempt, two mixed problems (a JavaFX hotel app and a console hotel system), and the practice directory: weeks 3 to 5 lab exercises and tutorials on threads, producer-consumer, synchronization and file streams, plus a midsem cricket-batting simulation that puts batting, fielding and umpire threads against shared state.
+
 ## Folders
 
 - [`Lab-01/`](Lab-01) - 8 Java sources, and a few others
@@ -31,6 +35,7 @@ Lab 6 covers persistence: serializing Room objects to disk, a RandomAccessFile d
 - [`Lab-05/`](Lab-05) - 2 Files, 1 Java source
 - [`Lab-06/`](Lab-06) - 6 Java sources, 5 Texts, 2 Data files
 - [`Lab-07/`](Lab-07) - 15 Java sources, 1 File
+- [`Lab-08/`](Lab-08) - 4 Java sources, 1 Text
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
 - [`slides/`](slides) - 4 Slidess, and a few others
 
