@@ -85,6 +85,8 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-08/
 |           |-- Lab-09/
 |           |-- lab-system-handout/
+|           |-- mixed-problems/
+|           |-- practice/
 |           |-- slides/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
