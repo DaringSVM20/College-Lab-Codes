@@ -43,7 +43,7 @@ The OOSDL mini project, which takes the semester's hotel example into a desktop 
 - [`Lab-08/`](Lab-08) - 4 Java sources, 1 Text
 - [`Lab-09/`](Lab-09) - 3 Java sources, 1 Notes
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
-- [`mini-project/`](mini-project) - 18 Java sources, 6 JavaFX views, 2 Files, and a few others
+- [`mini-project/`](mini-project) - 18 Java sources, 6 JavaFX views, 3 PDFs, and a few others
 - [`mixed-problems/`](mixed-problems) - 2 Java sources, 2 Notess
 - [`practice/`](practice) - 16 Java sources, 3 Texts, 1 JSON
 - [`slides/`](slides) - 4 Slidess, and a few others
