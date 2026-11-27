@@ -26,6 +26,10 @@ Lab 6 covers persistence: serializing Room objects to disk, a RandomAccessFile d
 
 Lab 8 reworks the hotel management system around Room and Customer collections. Lab 9 puts a GUI on it - a button demo, a hotel GUI and a room-price window. Also includes the endsem attempt, two mixed problems (a JavaFX hotel app and a console hotel system), and the practice directory: weeks 3 to 5 lab exercises and tutorials on threads, producer-consumer, synchronization and file streams, plus a midsem cricket-batting simulation that puts batting, fielding and umpire threads against shared state.
 
+### Mini project - JavaFX Hotel Booking System
+
+The OOSDL mini project, which takes the semester's hotel example into a desktop application. A Maven JavaFX project laid out in layers: models for Booking, Guest, Invoice and Room; a DAO per entity over a SQLite database reached through DatabaseHelper; FXML views for login, dashboard, guest dashboard, booking and billing with a controller behind each; and a stylesheet. The committed hotel.db is the small development database, and the folder keeps its own README, CHANGELOG and LICENSE along with the written report.
+
 ## Folders
 
 - [`endsem/`](endsem) - 1 Java source
@@ -39,6 +43,7 @@ Lab 8 reworks the hotel management system around Room and Customer collections. 
 - [`Lab-08/`](Lab-08) - 4 Java sources, 1 Text
 - [`Lab-09/`](Lab-09) - 3 Java sources, 1 Notes
 - [`lab-system-handout/`](lab-system-handout) - 8 Java sources, 2 Slidess, 1 Word document
+- [`mini-project/`](mini-project) - 18 Java sources, 6 JavaFX views, 2 Files, and a few others
 - [`mixed-problems/`](mixed-problems) - 2 Java sources, 2 Notess
 - [`practice/`](practice) - 16 Java sources, 3 Texts, 1 JSON
 - [`slides/`](slides) - 4 Slidess, and a few others
