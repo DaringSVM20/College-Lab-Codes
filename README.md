@@ -31,6 +31,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 | Sem 3 | [Digital Systems and Computer Organisation Lab](Year-II/Sem-3/DSCO-Lab) | Verilog HDL, combinational logic, multiplexers, decoders, encoders, flip-flops, counters |
 | Sem 4 | [Database Systems Lab](Year-II/Sem-4/DBSL) | DDL, DML, joins, aggregate and nested queries, PL/SQL cursors, ER modelling, full-stack mini project |
 | Sem 4 | [Object-Oriented Software Design Lab](Year-II/Sem-4/OOSDL) | Classes and inheritance, enums, multithreading, synchronization, I/O streams, serialization, generics, collections, JavaFX and Swing GUIs |
+| Sem 4 | [Operating Systems Lab](Year-II/Sem-4/OSL) | Unix/Linux commands, shell scripting, process control system calls, pthreads, CPU scheduling simulation, IPC |
 
 ## Repository layout
 
@@ -73,22 +74,26 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |       |   |-- Week-02/
 |       |   |-- Lab-Manual.pdf
 |       |   `-- README.md
-|       `-- OOSDL/
-|           |-- endsem/
+|       |-- OOSDL/
+|       |   |-- endsem/
+|       |   |-- Lab-01/
+|       |   |-- Lab-02/
+|       |   |-- Lab-03/
+|       |   |-- Lab-04/
+|       |   |-- Lab-05/
+|       |   |-- Lab-06/
+|       |   |-- Lab-07/
+|       |   |-- Lab-08/
+|       |   |-- Lab-09/
+|       |   |-- lab-system-handout/
+|       |   |-- mini-project/
+|       |   |-- mixed-problems/
+|       |   |-- practice/
+|       |   |-- slides/
+|       |   |-- Lab-Manual.pdf
+|       |   `-- README.md
+|       `-- OSL/
 |           |-- Lab-01/
-|           |-- Lab-02/
-|           |-- Lab-03/
-|           |-- Lab-04/
-|           |-- Lab-05/
-|           |-- Lab-06/
-|           |-- Lab-07/
-|           |-- Lab-08/
-|           |-- Lab-09/
-|           |-- lab-system-handout/
-|           |-- mini-project/
-|           |-- mixed-problems/
-|           |-- practice/
-|           |-- slides/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore

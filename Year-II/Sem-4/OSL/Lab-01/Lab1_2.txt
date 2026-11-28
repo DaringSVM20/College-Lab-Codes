@@ -1,0 +1,29 @@
+cash
+wad
+cash
+
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis magnam exercitationem sequi libero illum doloribus odit incidunt obcaecati, facere dolorem cum aliquam aspernatur. Hic accusamus similique modi cupiditate neque.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex cumque laudantium magnam amet soluta sed, porro reprehenderit maxime quo eum distinctio laborum facere sequi provident impedit exercitationem molestias cupiditate.
+!
+!
+
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ head -n 2 new.txt >> Lab1_2.txt
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ tail -c 2 new.txt >> Lab1_2.txt
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ tail -c 2 new.txt >> Lab1_2.txt
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ cat > file1.txt
+OS lab is good
+I like OS lab
+^C
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ echo file1.txt 
+file1.txt
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ cat > file2.txt
+OS Lab is bad
+I don't like OS Lab
+^C
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ cp -i file1.txt file2.txt 
+cp: overwrite 'file2.txt'? y
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ cp -i file1.txt file2.txt >> Lab1_2.txt
+cp: overwrite 'file2.txt'? y
+student@cl16-24:~/Documents/Shlok_240968500/lab1$ 
+

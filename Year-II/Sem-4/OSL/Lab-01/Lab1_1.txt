@@ -1,0 +1,7 @@
+/home/student/Documents/Shlok_240968500/lab1
+total 4
+-rw-r--r-- 1 student student 45 Jan  6 15:31 Lab1_1.txt
+Lab1_1
+Tuesday 06 January 2026 03:32:14 PM IST
+Lab1_1.txt
+test
