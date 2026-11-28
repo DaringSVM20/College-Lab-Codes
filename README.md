@@ -96,6 +96,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |           |-- Lab-01/
 |           |-- Lab-02/
 |           |-- Lab-03/
+|           |-- practice/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore
