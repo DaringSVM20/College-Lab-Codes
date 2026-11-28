@@ -94,6 +94,7 @@ For Doubts/ Changes, Contact: shlokverma20@gmail.com
 |       |   `-- README.md
 |       `-- OSL/
 |           |-- Lab-01/
+|           |-- Lab-02/
 |           |-- Lab-Manual.pdf
 |           `-- README.md
 |-- .gitignore

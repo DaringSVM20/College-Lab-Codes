@@ -17,6 +17,7 @@ The command-line weeks. Lab 1 and Lab 2 are recorded exercise transcripts with t
 ## Folders
 
 - [`Lab-01/`](Lab-01) - 3 Texts, 1 PDF, 1 Word document, and a few others
+- [`Lab-02/`](Lab-02) - 4 Texts, 3 Files, 1 PDF, and a few others
 
 ## Requirements
 
